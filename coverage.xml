@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1538920842">
+  <project timestamp="1538920842">
+    <package name="Shield\Teamwork">
+      <file name="/Users/luca/Sites/laravel-package/laravel-shield/teamwork/src/Teamwork.php">
+        <class name="Shield\Teamwork\Teamwork" namespace="Shield\Teamwork">
+          <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
+        </class>
+        <line num="16" type="method" name="verify" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="18" type="stmt" count="2"/>
+        <line num="19" type="stmt" count="2"/>
+        <line num="21" type="method" name="headers" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="23" type="stmt" count="1"/>
+        <metrics loc="25" ncloc="20" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
+      </file>
+    </package>
+    <metrics files="1" loc="25" ncloc="20" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
+  </project>
+</coverage>
