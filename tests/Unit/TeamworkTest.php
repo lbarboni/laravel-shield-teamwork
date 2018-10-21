@@ -67,4 +67,20 @@ class TeamworkTest extends TestCase
         Assert::assertArraySubset(['X-Projects-Signature'], $this->service->headers());
 
     }
+
+    /** @test */
+    public function disable_verify() {
+        $token = 'teikoK33Y$$';
+        $this->app['config']['shield.services.teamwork.options.token'] = $token;
+        $content = 'XXX Code Only';
+        $request = $this->request($content);
+        $headers = [
+            'X-Projects-Signature' => 'disabled',
+        ];
+        $request->headers->add($headers);
+        
+        config(['shield.services.teamwork.options.disable_verify' => true]);
+
+        Assert::assertTrue($this->service->verify($request, collect($this->app['config']['shield.services.teamwork.options'])));
+    }
 }
