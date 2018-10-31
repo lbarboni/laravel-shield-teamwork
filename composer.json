@@ -1,0 +1,28 @@
+{
+    "name": "laravel-shield/teamwork",
+    "description": "Teamwork service for shield.",
+    "type": "library",
+    "require": {
+        "laravel-shield/shield": "^1.0"
+    },
+    "require-dev": {
+        "laravel-shield/testing": "^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luca Barboni",
+            "email": "luca.barboni@essesolutions.it"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Shield\\Teamwork\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Shield\\Teamwork\\Test\\": "tests/"
+        }
+    }
+}
